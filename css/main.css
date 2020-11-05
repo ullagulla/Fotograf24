@@ -29,7 +29,28 @@ body {
   body .container .row .img-photographer-wrapper {
     width: 100%; }
     body .container .row .img-photographer-wrapper img {
-      width: 90%; }
+      width: 100%; }
+    body .container .row .img-photographer-wrapper .hover-div {
+      position: relative;
+      cursor: pointer;
+      z-index: 100;
+      background: rgba(0, 0, 0, 0); }
+      body .container .row .img-photographer-wrapper .hover-div:hover img {
+        background: rgba(0, 0, 0, 0.719);
+        filter: brightness(40%);
+        transition: all 0.5s; }
+      body .container .row .img-photographer-wrapper .hover-div .photographer-info {
+        color: white;
+        font-weight: bold;
+        position: absolute;
+        opacity: 0;
+        z-index: 1000;
+        left: 47%;
+        top: 43%;
+        transform: translate(-47%, -43%); }
+      body .container .row .img-photographer-wrapper .hover-div:hover .photographer-info {
+        opacity: 1;
+        transition: all 1s; }
   body .container .row .col-md-4 .subarea {
     fill: #EADCCF; }
   body .container .row .region_link_list {
