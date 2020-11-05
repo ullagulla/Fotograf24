@@ -24,6 +24,22 @@ $(document).ready(function () {
         }, function() {
             $("#subarea" + i).css("opacity", "1");
         })
-    })
+
+        $(".subarea-info").each(function(i) {
+            $(this).attr("id", "subarea-info" + i);
+        });
+
+        // $("#area_" + i).click(function(i) {
+        //     $('html, body').animate({
+        //         scrollTop: $("#subarea-info" + i)
+        //         // .each(function(i) {
+        //             // $("#subarea-info" + i)
+        //             .offset().top},
+        //             'slow')
+        //         // })
+        // });
+    });
+
+    
 
 });
