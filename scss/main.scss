@@ -6,7 +6,9 @@ body {
                 background-image: url("../images/header.jpg");
                 background-size: cover;
                 background-repeat: no-repeat;
-                height: 720px;
+                background-position: center center;
+                // background-attachment: fixed;
+                height: 700px;
             }
             .image1-wrapper {
                 width: 100%;
@@ -14,13 +16,18 @@ body {
                     width: 90%;
                 }
             }
-            .col-3 {
+            .col-md-3 {
                 .subarea {
-                    fill: pink;
+                    fill: #EADCCF;
                 //     opacity: 0.6;
                 //     &:hover {
                 //         fill: rgba(0, 0, 0, 0.397);
                 //     }
+                }
+                .regionslist {
+                    li {
+                        margin-bottom: 7px;
+                    }
                 }
                 .region_link_list {
                     color: black;
