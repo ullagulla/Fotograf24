@@ -1,3 +1,23 @@
+.navbar {
+  padding: 20px 10px 20px 10px; }
+  .navbar .v-line {
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+    height: 20px;
+    margin: 10px 5px 0px 5px; }
+  .navbar .nav-item .nav-link {
+    color: rgba(0, 0, 0, 0.5);
+    padding-right: 10px; }
+
+.line {
+  border-bottom: 1px solid rgba(82, 82, 82, 0.5); }
+
+button {
+  border: none; }
+  button .hamburger {
+    width: 30px;
+    margin: 7px 0px 7px 0px;
+    border-bottom: 1px solid; }
+
 body {
   font-family: 'Work Sans', sans-serif; }
   body .header {
