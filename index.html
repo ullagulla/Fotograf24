@@ -26,10 +26,9 @@
 <body>
     <div class="col-12 header mx-0 px-0">
         <!-- Navbar -->
-        <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
+        <nav class="navbar navbar-light navbar-expand-lg bg-faded justify-content-center">
             <a href="/" class="navbar-brand d-flex w-50 mr-auto">Fotograf 24</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#collapsingNavbar3">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
                 <div class="hamburger"></div>
                 <div class="hamburger"></div>
                 <div class="hamburger"></div>
@@ -37,10 +36,10 @@
             <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
                 <ul class="navbar-nav w-100 justify-content-center">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Hem</a>
+                        <a class="nav-link rubrik" href="#">Hem</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Fototjänst</a>
+                        <a class="nav-link rubrik" href="#">Fototjänst</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link rubrik" href="#">Om oss</a>
@@ -61,7 +60,21 @@
                     </li>
                     <div class="v-line"></div>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-search"></i> Sök</a>
+                        <a class="nav-link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24"
+                                viewBox="0 0 172 172" style=" fill:#000000;">
+                                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                    stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+                                    text-anchor="none" style="mix-blend-mode: normal">
+                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                    <g fill="#636363">
+                                        <path
+                                            d="M73.45833,21.5c-28.63214,0 -51.95833,23.32621 -51.95833,51.95833c0,28.63212 23.32619,51.95833 51.95833,51.95833c12.38529,0 23.77079,-4.37509 32.71191,-11.64583l35.15446,35.15446c1.34815,1.40412 3.35005,1.96971 5.23364,1.47866c1.88359,-0.49105 3.35456,-1.96202 3.84561,-3.84561c0.49105,-1.88359 -0.07455,-3.88549 -1.47866,-5.23364l-35.15446,-35.15446c7.27074,-8.94112 11.64583,-20.32663 11.64583,-32.71191c0,-28.63212 -23.32619,-51.95833 -51.95833,-51.95833zM73.45833,32.25c22.82242,0 41.20833,18.38593 41.20833,41.20833c0,11.11769 -4.38529,21.16215 -11.49886,28.56169c-0.43849,0.32229 -0.8255,0.7093 -1.14779,1.14779c-7.39953,7.11357 -17.44399,11.49886 -28.56169,11.49886c-22.82242,0 -41.20833,-18.38593 -41.20833,-41.20833c0,-22.8224 18.38591,-41.20833 41.20833,-41.20833z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg> Sök</a>
                     </li>
                 </ul>
             </div>
@@ -669,7 +682,7 @@
                     <li class="pb-lg-2">
                         <a class="region_link_list" id="area_3" href="#subarea-info3">Västernorrland</a>
                     </li>
-                
+
                     <li class="pb-lg-2">
                         <a class=" region_link_list" id="area_4" href="#subarea-info4">Gävleborg</a>
                     </li>
@@ -768,7 +781,7 @@
             <div class="col-12 col-md-4 py-2 img-photographer-wrapper d-flex justify-content-center">
                 <div class="hover-div">
                     <span class="photographer-info">Photographer 3</span>
-                    <span class="show-profile">Visa profil</span>
+                    <a href="#"><span class="show-profile">Visa profil</span></a>
                     <img src="images/photographer3.jpg" alt="Picture of photographer" />
                 </div>
             </div>
@@ -776,7 +789,7 @@
                 <h2>Fotografer i Sverige</h2>
                 <h5>Sorterat på län</h5>
             </div>
-            <div class="col-5 py-5 subarea-info">
+            <div class="col-12 col-md-9 col-lg-5 py-5 subarea-info">
                 <h2>Norrbotten</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus facilis exercitationem
                     aut voluptas distinctio perspiciatis doloribus ratione nesciunt corrupti tenetur.</p>
@@ -788,7 +801,7 @@
                     <li>Amet</li>
                 </ul>
             </div>
-            <div class="col-7 py-5"></div>
+            <div class="col-12 col-md-3 col-lg-7 py-5"></div>
             <div class="col-5 py-5 subarea-info">
                 <h2>Västerbotten</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus facilis exercitationem
@@ -906,19 +919,19 @@
                 </ul>
             </div>
             <div class="col-7 py-5"></div>
-            <div class="col-5 py-5 subarea-info">
-                    <h2>Stockholm</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus facilis exercitationem
-                        aut voluptas distinctio perspiciatis doloribus ratione nesciunt corrupti tenetur.</p>
-                    <ul>
-                        <li>Lorem</li>
-                        <li>Ipsum</li>
-                        <li>Dolor</li>
-                        <li>Sit</li>
-                        <li>Amet</li>
-                    </ul>
+            <div class="col-12 col-md-9 col-lg-5 py-5 subarea-info">
+                <h2>Stockholm</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus facilis exercitationem
+                    aut voluptas distinctio perspiciatis doloribus ratione nesciunt corrupti tenetur.</p>
+                <ul>
+                    <li>Lorem</li>
+                    <li>Ipsum</li>
+                    <li>Dolor</li>
+                    <li>Sit</li>
+                    <li>Amet</li>
+                </ul>
             </div>
-            <div class="col-7 py-5 img-city-wrapper">
+            <div class="col-12 col-md-3 col-lg-7 py-5 img-city-wrapper">
                 <img id="img-sthlm1" src="images/Stockholm1.jpg" alt="Picture of Stockholm" />
                 <img id="img-sthlm2" src="images/Stockholm2.jpg" alt="Picture of Stockholm" />
             </div>
@@ -1089,24 +1102,23 @@
 
     </div>
     <!-- Footer -->
-    <footer class="page-footer font-small d-flex justify-content-center ">
+    <footer class="page-footer font-small d-flex justify-content-center fixed-bottom">
         <div class="row">
-            <div class="col text-center"><a class="text-uppercase">om oss</a></div>
+            <div class="col text-center" id="about-us"><a class="text-uppercase">om oss</a></div>
 
             <div class="col text-center"><a class="text-uppercase">fototjänster</a></div>
 
-            <div class="col text-center"><a class="text-uppercase">kontakt</a></div>
+            <div class="col text-center" id="contact-us"><a class="text-uppercase">kontakt</a></div>
 
-            <div class="col-last text-center"><a class="text-uppercase last">cookie policy</a></div>
+            <div class="col-last text-center" id="cookie-policy"><a class="text-uppercase last">cookie policy</a></div>
         </div>
     </footer>
     <!-- Footer -->
 
 </body>
 
-<script
-  src="https://code.jquery.com/jquery-3.5.1.min.js"
-  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
 </script>

@@ -7,11 +7,13 @@ $(document).ready(function () {
             $("#subarea" + i).css("opacity", "1");
         })
 
-        $("#subarea" + i).hover(function() {
+        $("#subarea" + i).mouseenter(function() {
             $("#area_" + i).css({
                 "color": "rgba(0, 0, 0, 0.623)", 
                 "text-decoration": "underline"});
-        }, function() {
+        })
+
+        $("#subarea" + i).mouseleave(function() {
             $("#area_" + i).css({
                 "color": "black", 
                 "text-decoration": "none"});
@@ -19,27 +21,16 @@ $(document).ready(function () {
     })
 
     $(".region_link_list").each(function(i) {
-        $("#area_" + i).hover(function() {
+        $("#area_" + i).mouseenter(function() {
             $("#subarea" + i).css("opacity", "0.4");
-        }, function() {
+        })
+
+        $("#area_" + i).mouseleave(function() {
             $("#subarea" + i).css("opacity", "1");
         })
 
         $(".subarea-info").each(function(i) {
             $(this).attr("id", "subarea-info" + i);
         });
-
-        // $("#area_" + i).click(function(i) {
-        //     $('html, body').animate({
-        //         scrollTop: $("#subarea-info" + i)
-        //         // .each(function(i) {
-        //             // $("#subarea-info" + i)
-        //             .offset().top},
-        //             'slow')
-        //         // })
-        // });
     });
-
-    
-
 });

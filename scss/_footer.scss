@@ -1,6 +1,12 @@
+@mixin tablet {
+    @media (min-width: 600px) {
+        @content;
+    }
+}
+
 .page-footer {
     background-color: #EADCCF;
-    padding: 10px 0px 10px 0px;
+    padding: 16px 0px 16px 0px;
     .col {
         border-right: 1px solid rgba(0, 0, 0, .5);
         height: 20px;
@@ -10,9 +16,24 @@
         a {
             color: rgba(0, 0, 0, .5);
             padding: 10px;
+            cursor: pointer;
 
         }
 
+        
+    }
+    #cookie-policy {
+        display: none;
+        @include tablet(){
+            display: inline-block;
+        }
+    }
+
+    #contact-us {
+        border: none;
+        @include tablet() {
+            border-right: 1px solid rgba(0, 0, 0, .5);
+        }
     }
 
     .col-last a {

@@ -9,35 +9,15 @@
 
     }
 
-    padding: 20px 10px 20px 10px;
-
-    .v-line {
-        border-right: 1px solid rgba(0, 0, 0, .5);
-        height: 20px;
-        margin: 10px 5px 0px 5px;
-
-    }
-
-
     .nav-item {
-
+        .rubrik {
+            margin-right: 40px;
+        }
         .nav-link {
             color: rgba(0, 0, 0, .5);
-
-            .nav-item {
-                .nav-link {
-                    color: rgba(0, 0, 0, .5);
-                    padding-right: 10px;
-
-                }
-            }
+            padding-right: 10px;
 
         }
-    }
-
-    .line {
-        border-bottom: 1px solid rgba(82, 82, 82, 0.5);
-
     }
 
     button {
@@ -50,4 +30,8 @@
 
         }
     }
+}
+.line {
+    border-bottom: 1px solid rgba(82, 82, 82, 0.5);
+
 }
