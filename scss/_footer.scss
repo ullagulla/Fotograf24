@@ -1,0 +1,28 @@
+.page-footer {
+    background-color: #EADCCF;
+    padding: 10px 0px 10px 0px;
+
+
+
+
+
+    .col {
+        border-right: 1px solid rgba(0, 0, 0, .5);
+        height: 20px;
+        padding: 0px 3px;
+
+
+        a {
+            color: rgba(0, 0, 0, .5);
+            padding: 10px;
+
+        }
+
+    }
+
+    .col-last a {
+        color: rgba(0, 0, 0, .5);
+        padding-left: 10px;
+
+    }
+}
