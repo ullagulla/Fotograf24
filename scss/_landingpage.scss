@@ -16,7 +16,6 @@ body {
                 }
                 .hover-div {
                     position: relative;
-                    cursor: pointer;
                     z-index: 100;
                     background: rgba(0, 0, 0, 0);
                     &:hover img {
@@ -34,7 +33,23 @@ body {
                         top: 43%;
                         transform: translate(-47%, -43%);
                     }
+                    .show-profile {
+                        text-transform: uppercase;
+                        color: white;
+                        font-weight: bold;
+                        position: absolute;
+                        opacity: 0;
+                        z-index: 1000;
+                        left: 47%;
+                        top: 57%;
+                        transform: translate(-47%, -57%);
+                        border-bottom: 2px solid pink;
+                    }
                     &:hover .photographer-info {
+                        opacity: 1;
+                        transition: all 1s;
+                    }
+                    &:hover .show-profile {
                         opacity: 1;
                         transition: all 1s;
                     }
