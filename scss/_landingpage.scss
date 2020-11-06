@@ -1,3 +1,15 @@
+@mixin tablet {
+    @media (min-width: 600px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 968px) {
+        @content;
+    }
+}
+
 body {
     font-family: 'Work Sans', sans-serif;
     .header {
@@ -55,6 +67,14 @@ body {
                     }
                 }
             }
+            .subarea-header {
+                padding-left: 0;
+                padding-right: 0;
+                h5 {
+                    padding-bottom: 50px;
+                    border-bottom: 1px solid rgba(82, 82, 82, 0.5);
+                }
+            }
             .col-md-4 {
                 .subarea {
                     fill: #EADCCF;
@@ -67,40 +87,124 @@ body {
                 }
             }
             .subarea-info {
-                margin-bottom: 150px;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                @include tablet(){
+                    padding-bottom: 200px;
+                }
+                @include tablet(){
+                    border-bottom: 1px solid rgba(82, 82, 82, 0.5);
+                }
             }
             .img-city-wrapper {
                 position: relative;
                 width: 100%;
-                #img-sthlm1 {
-                    box-shadow: 0px 0px 2px 0px #0000008e;
-                    width: 40%;
-                    position: absolute;
-                    right: 0;
-                    top: 100px;
-                    z-index: 1;
+                border-bottom: 1px solid rgba(82, 82, 82, 0.5);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                @include tablet(){
+                    padding-top: 100px;
                 }
-                #img-sthlm2 {
-                    box-shadow: 0px 0px 2px 0px #0000008e;
-                    width: 30%;
-                    position: absolute;
-                    right: 200px;
-                    top: 180px;
+                @include desktop(){
+                    display: block;
                 }
-                #img-gbg1 {
+                img {
                     box-shadow: 0px 0px 2px 0px #0000008e;
-                    width: 40%;
-                    position: absolute;
-                    right: 133px;
-                    top: 100px;
+                    width: 70%;
+                    margin-bottom: 50px;
                 }
-                #img-gbg2 {
-                    box-shadow: 0px 0px 2px 0px #0000008e;
-                    width: 30%;
-                    position: absolute;
-                    right: 30px;
-                    top: 180px;
-                    z-index: 1;
+                @include tablet(){
+                    img {
+                        width: 100%;
+                    }
+                }
+                @include desktop(){
+                    img {
+                        position: absolute;
+                        margin-bottom: 0;
+                        width: 40%;
+                    }
+                    #img-nrbtn1 {
+                        top: 115px;
+                        right: 0;
+                    }
+                    #img-nrbtn2 {
+                        z-index: 1;
+                        top: 100px;
+                        right: 200px;
+                    }
+                    #img-vbtn1 {
+                        right: 0;
+                        top: 100px;
+                        z-index: 1;
+                    }
+                    #img-vbtn2 {
+                        right: 200px;
+                        top: 70px;
+                    }
+                    #img-jland1 {
+                        right: 0;
+                        top: 100px;
+                        z-index: 1;                        
+                    }
+                    #img-jland2 {
+                        right: 200px;
+                        top: 180px;
+                    }
+                    #img-vnrld1 {
+                        right: 0;
+                        top: 100px;
+                        z-index: 1;
+                    }
+                    #img-vnrld2 {
+                        right: 300px;
+                        top: 230px;
+                    }
+                    #img-gavle1 {
+                        right: 0;
+                        top: 100px;
+                    }
+                    #img-gavle2 {
+                        right: 200px;
+                        top: 180px;
+                    }
+                    #img-dalarna1 {
+                        right: 0;
+                        top: 100px;
+                        z-index: 1;
+                    }
+                    #img-dalarna2 {
+                        right: 200px;
+                        top: 160px;
+                    }
+                    #img-vland1 {
+                        right: 200px;
+                        top: 130px;
+                    }
+                    #img-vland2 {
+                        right: 0;
+                        top: 100px;
+                        z-index: 1;
+                    }
+                    #img-sthlm1 {
+                        right: 0;
+                        top: 100px;
+                        z-index: 1;
+                    }
+                    #img-sthlm2 {
+                        right: 200px;
+                        top: 180px;
+                    }
+                    #img-gbg1 {
+                        right: 133px;
+                        top: 100px;
+                    }
+                    #img-gbg2 {
+                        right: 30px;
+                        top: 180px;
+                        z-index: 1;
+                    }
                 }
             }
         }

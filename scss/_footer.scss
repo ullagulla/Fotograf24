@@ -24,6 +24,7 @@
     }
     #cookie-policy {
         display: none;
+        cursor: pointer;
         @include tablet(){
             display: inline-block;
         }
