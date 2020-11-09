@@ -1,15 +1,19 @@
 .navbar {
+  max-width: 1600px;
+  margin: auto;
   text-transform: uppercase;
   padding: 20px 10px 20px 15px; }
   .navbar img {
-    width: 20%;
+    width: 21%;
     margin-right: 10px; }
     @media (min-width: 600px) {
       .navbar img {
-        width: 9%; } }
+        width: 10%; } }
     @media (min-width: 968px) {
       .navbar img {
-        width: 7%; } }
+        width: 8%; } }
+  .navbar .navbar-brand span {
+    border-bottom: 2px solid #EADCCF; }
   .navbar #navbar-icons {
     flex-direction: row; }
   .navbar .v-line {
@@ -41,6 +45,11 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     height: 700px; }
+  body .container .row .photographers-list li a {
+    text-decoration: none;
+    color: black; }
+    body .container .row .photographers-list li a:hover {
+      color: rgba(0, 0, 0, 0.5); }
   body .container .row .img-photographer-wrapper {
     width: 100%; }
     body .container .row .img-photographer-wrapper img {
@@ -94,16 +103,18 @@ body {
   body .container .row .subarea-info {
     padding-top: 50px;
     padding-bottom: 50px; }
+  body .container .row .subarea-photographers {
+    min-height: 550px;
+    border-bottom: 1px solid rgba(82, 82, 82, 0.5); }
     @media (min-width: 600px) {
-      body .container .row .subarea-info {
-        padding-bottom: 200px; } }
-    @media (min-width: 600px) {
-      body .container .row .subarea-info {
-        border-bottom: 1px solid rgba(82, 82, 82, 0.5); } }
+      body .container .row .subarea-photographers {
+        min-height: 450px; } }
+    @media (min-width: 968px) {
+      body .container .row .subarea-photographers {
+        min-height: 550px; } }
   body .container .row .img-city-wrapper {
     position: relative;
     width: 100%;
-    border-bottom: 1px solid rgba(82, 82, 82, 0.5);
     display: flex;
     flex-direction: column;
     align-items: center; }
