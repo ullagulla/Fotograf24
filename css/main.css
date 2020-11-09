@@ -1,15 +1,15 @@
 .navbar {
+  text-transform: uppercase;
   padding: 20px 10px 20px 15px; }
-  .navbar .logo-wrapper {
-    width: 100%; }
-    .navbar .logo-wrapper img {
-      width: 60%; }
-      @media (min-width: 600px) {
-        .navbar .logo-wrapper img {
-          width: 30%; } }
-      @media (min-width: 968px) {
-        .navbar .logo-wrapper img {
-          width: 25%; } }
+  .navbar img {
+    width: 20%;
+    margin-right: 10px; }
+    @media (min-width: 600px) {
+      .navbar img {
+        width: 9%; } }
+    @media (min-width: 968px) {
+      .navbar img {
+        width: 7%; } }
   .navbar #navbar-icons {
     flex-direction: row; }
   .navbar .v-line {
@@ -17,8 +17,7 @@
     height: 20px;
     margin: 10px 5px 0px 5px; }
   .navbar .nav-item .rubrik {
-    margin-right: 40px;
-    text-transform: uppercase; }
+    margin-right: 40px; }
     .navbar .nav-item .rubrik:hover {
       color: rgba(0, 0, 0, 0.5); }
   .navbar .nav-item .nav-link {
@@ -35,9 +34,7 @@
   border-bottom: 1px solid rgba(82, 82, 82, 0.5); }
 
 body {
-  font-family: 'Work Sans', sans-serif;
-  max-width: 1600px;
-  margin: auto; }
+  font-family: 'Work Sans', sans-serif; }
   body .header {
     background-image: url("../images/header.jpg");
     background-size: cover;

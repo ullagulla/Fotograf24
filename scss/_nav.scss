@@ -11,19 +11,16 @@
 }
 
 .navbar {
-
+    text-transform: uppercase;
     padding: 20px 10px 20px 15px;
-
-    .logo-wrapper {
-        width: 100%;
-        img {
-            width: 60%;
-            @include tablet(){
-                width: 30%;
-            }
-            @include desktop(){
-                width: 25%;
-            }
+    img {
+        width: 20%;
+        margin-right: 10px;
+        @include tablet(){
+            width: 9%;
+        }
+        @include desktop(){
+            width: 7%;
         }
     }
 
@@ -40,7 +37,6 @@
     .nav-item {
         .rubrik {
             margin-right: 40px;
-            text-transform: uppercase;
             &:hover {
                 color: rgba(0, 0, 0, .5);
             }
