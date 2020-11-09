@@ -1,5 +1,15 @@
 .navbar {
-  padding: 20px 10px 20px 10px; }
+  padding: 20px 10px 20px 15px; }
+  .navbar .logo-wrapper {
+    width: 100%; }
+    .navbar .logo-wrapper img {
+      width: 60%; }
+      @media (min-width: 600px) {
+        .navbar .logo-wrapper img {
+          width: 30%; } }
+      @media (min-width: 968px) {
+        .navbar .logo-wrapper img {
+          width: 25%; } }
   .navbar #navbar-icons {
     flex-direction: row; }
   .navbar .v-line {
@@ -7,10 +17,13 @@
     height: 20px;
     margin: 10px 5px 0px 5px; }
   .navbar .nav-item .rubrik {
-    margin-right: 40px; }
+    margin-right: 40px;
+    text-transform: uppercase; }
+    .navbar .nav-item .rubrik:hover {
+      color: rgba(0, 0, 0, 0.5); }
   .navbar .nav-item .nav-link {
     color: rgba(0, 0, 0, 0.5);
-    padding-right: 10px; }
+    padding-right: 5px; }
   .navbar button {
     border: none; }
     .navbar button .hamburger {
@@ -161,20 +174,112 @@ body {
         right: 0;
         top: 100px;
         z-index: 1; }
+      body .container .row .img-city-wrapper #img-orebro1 {
+        right: 0;
+        top: 100px; }
+      body .container .row .img-city-wrapper #img-orebro2 {
+        right: 180px;
+        top: 270px; }
+      body .container .row .img-city-wrapper #img-vest1 {
+        right: 0;
+        top: 100px;
+        z-index: 1; }
+      body .container .row .img-city-wrapper #img-vest2 {
+        right: 150px;
+        top: 250px; }
+      body .container .row .img-city-wrapper #img-upp1 {
+        right: 280px;
+        top: 100px; }
+      body .container .row .img-city-wrapper #img-upp2 {
+        right: 0;
+        top: 220px; }
       body .container .row .img-city-wrapper #img-sthlm1 {
         right: 0;
         top: 100px;
         z-index: 1; }
       body .container .row .img-city-wrapper #img-sthlm2 {
         right: 200px;
-        top: 180px; }
-      body .container .row .img-city-wrapper #img-gbg1 {
-        right: 133px;
+        top: 60px; }
+      body .container .row .img-city-wrapper #img-sland1 {
+        right: 0;
+        top: 280px;
+        z-index: 1; }
+      body .container .row .img-city-wrapper #img-sland2 {
+        right: 200px;
+        top: 60px; }
+      body .container .row .img-city-wrapper #img-sborg1 {
+        right: 0;
+        top: 70px; }
+      body .container .row .img-city-wrapper #img-sborg2 {
+        right: 170px;
+        top: 320px; }
+      body .container .row .img-city-wrapper #img-ostland1 {
+        right: 0;
         top: 100px; }
+      body .container .row .img-city-wrapper #img-ostland2 {
+        right: 200px;
+        top: 270px; }
+      body .container .row .img-city-wrapper #img-gbg1 {
+        right: 180px;
+        top: 80px; }
       body .container .row .img-city-wrapper #img-gbg2 {
         right: 30px;
-        top: 180px;
-        z-index: 1; } }
+        top: 150px;
+        z-index: 1; }
+      body .container .row .img-city-wrapper #img-aborg1 {
+        right: 0;
+        top: 100px;
+        z-index: 1; }
+      body .container .row .img-city-wrapper #img-aborg2 {
+        right: 200px;
+        top: 60px; }
+      body .container .row .img-city-wrapper #img-jkoping1 {
+        right: 0;
+        top: 100px; }
+      body .container .row .img-city-wrapper #img-jkoping2 {
+        right: 200px;
+        top: 300px; }
+      body .container .row .img-city-wrapper #img-kalmar1 {
+        right: 0;
+        top: 100px; }
+      body .container .row .img-city-wrapper #img-kalmar2 {
+        right: 300px;
+        top: 250px; }
+      body .container .row .img-city-wrapper #img-gotland1 {
+        right: 0;
+        top: 100px;
+        z-index: 1; }
+      body .container .row .img-city-wrapper #img-gotland2 {
+        right: 250px;
+        top: 60px; }
+      body .container .row .img-city-wrapper #img-halland1 {
+        right: 77px;
+        top: 300px;
+        z-index: 1; }
+      body .container .row .img-city-wrapper #img-halland2 {
+        right: 200px;
+        top: 60px; }
+      body .container .row .img-city-wrapper #img-kberg1 {
+        right: 120px;
+        top: 230px;
+        z-index: 1; }
+      body .container .row .img-city-wrapper #img-kberg2 {
+        right: 0px;
+        top: 100px; }
+      body .container .row .img-city-wrapper #img-blekinge1 {
+        right: 0;
+        top: 310px;
+        z-index: 1; }
+      body .container .row .img-city-wrapper #img-blekinge2 {
+        right: 200px;
+        top: 60px; }
+      body .container .row .img-city-wrapper #img-skane1 {
+        right: 190px;
+        top: 50px;
+        z-index: 1; }
+      body .container .row .img-city-wrapper #img-skane2 {
+        right: 0;
+        top: 90px; } }
 
 .page-footer {
   background-color: #EADCCF;

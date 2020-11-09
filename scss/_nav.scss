@@ -1,6 +1,31 @@
+@mixin tablet {
+    @media (min-width: 600px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 968px) {
+        @content;
+    }
+}
+
 .navbar {
 
-    padding: 20px 10px 20px 10px;
+    padding: 20px 10px 20px 15px;
+
+    .logo-wrapper {
+        width: 100%;
+        img {
+            width: 60%;
+            @include tablet(){
+                width: 30%;
+            }
+            @include desktop(){
+                width: 25%;
+            }
+        }
+    }
 
     #navbar-icons {
         flex-direction: row;
@@ -15,10 +40,14 @@
     .nav-item {
         .rubrik {
             margin-right: 40px;
+            text-transform: uppercase;
+            &:hover {
+                color: rgba(0, 0, 0, .5);
+            }
         }
         .nav-link {
             color: rgba(0, 0, 0, .5);
-            padding-right: 10px;
+            padding-right: 5px;
 
         }
     }

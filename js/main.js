@@ -22,11 +22,17 @@ $(document).ready(function () {
 
     $(".region_link_list").each(function(i) {
         $("#area_" + i).mouseenter(function() {
-            $("#subarea" + i).css("opacity", "0.4");
+            $("#subarea" + i).css("opacity", "0.4"),
+            $("#area_" + i).css({
+                "color": "rgba(0, 0, 0, 0.623)", 
+                "text-decoration": "underline"});
         })
 
         $("#area_" + i).mouseleave(function() {
             $("#subarea" + i).css("opacity", "1");
+            $("#area_" + i).css({
+                "color": "black", 
+                "text-decoration": "none"});
         })
 
         $(".subarea-info").each(function(i) {
