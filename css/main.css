@@ -35,7 +35,9 @@
   border-bottom: 1px solid rgba(82, 82, 82, 0.5); }
 
 body {
-  font-family: 'Work Sans', sans-serif; }
+  font-family: 'Work Sans', sans-serif;
+  max-width: 1600px;
+  margin: auto; }
   body .header {
     background-image: url("../images/header.jpg");
     background-size: cover;
