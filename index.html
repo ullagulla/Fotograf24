@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fotograf 24 - Startsida</title>
 
     <link href="https://fonts.googleapis.com/css?family=Heebo|Work+Sans:400&display=swap" rel="stylesheet">
 
@@ -27,7 +27,7 @@
     <div class="col-12 header mx-0 px-0">
         <!-- Navbar -->
         <nav class="navbar navbar-light navbar-expand-lg bg-faded justify-content-center">
-            <a href="#" class="navbar-brand d-flex w-50 mr-auto"> <img src="images/logo-camera.png" /> <span>Fotograf 24</span></a>
+            <a href="index.html" class="navbar-brand d-flex w-50 mr-auto"> <img src="images/logo-camera.png" /> <span>Fotograf 24</span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
                 <div class="hamburger"></div>
                 <div class="hamburger"></div>
@@ -36,16 +36,16 @@
             <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
                 <ul class="navbar-nav w-100 justify-content-center">
                     <li class="nav-item active">
-                        <a class="nav-link rubrik" href="#">Hem</a>
+                        <a class="nav-link rubrik" href="index.html">Hem</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link rubrik" href="#">Tjänster</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link rubrik" href="#">Om oss</a>
+                        <a class="nav-link rubrik" href="about-us.html">Om oss</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link rubrik" href="#">Kontakt</a>
+                        <a class="nav-link rubrik" href="contact.html">Kontakt</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav ml-auto w-100 justify-content-end" id="navbar-icons">
@@ -657,7 +657,7 @@
                 <ul class="regionslist list-unstyled">
 
                     <li class="pb-lg-2">
-                        <a class="region_link_list" id="area_0" href="#subarea-info0">Norrbotten</a>
+                        <a class="region_link_list" id="area_0" name="Norrbotten" href="#subarea-info0">Norrbotten</a>
                     </li>
 
                     <li class="pb-lg-2">
@@ -1158,17 +1158,47 @@
 
     </div>
     <!-- Footer -->
-    <footer class="page-footer font-small d-flex justify-content-center fixed-bottom">
+        <!-- Footer -->
+        <footer class="page-footer font-small d-flex justify-content-center fixed-bottom">
+            <div class="container">
+                <ul class="list-unstyled list-inline text-center">
+                    <li class="list-inline-item">
+                      <a class="footer-links pl-1 pr-3 pr-md-4 text-uppercase">
+                        om oss
+                      </a>
+                      <span class="separator"></span>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="footer-links pl-1 pr-3 pr-md-4 text-uppercase">
+                        tjänster
+                      </a>
+                      <span class="separator"></span>
+                    </li>
+                    <li class="list-inline-item" id="contact-us">
+                      <a class="footer-links pl-1 pr-3 pr-md-4 text-uppercase">
+                        kontakt
+                      </a>
+                      <span class="separator"></span>
+                    </li>
+                    <li class="list-inline-item" id="cookie-policy">
+                      <a class="footer-links pr-md-4 text-uppercase ">
+                        cookie policy
+                      </a>
+                    </li>
+                  </ul>
+            </div>
+        </footer>
+    <!-- <footer class="page-footer font-small d-flex justify-content-center fixed-bottom">
         <div class="row">
-            <div class="col text-center" id="about-us"><a class="text-uppercase">om oss</a></div>
+            <div class="col text-center" id="about-us"><a href="about-us.html" class="footer-link text-uppercase">om oss</a></div>
 
-            <div class="col text-center"><a class="text-uppercase">tjänster</a></div>
+            <div class="col text-center"><a class="footer-link text-uppercase">tjänster</a></div>
 
-            <div class="col text-center" id="contact-us"><a class="text-uppercase">kontakt</a></div>
+            <div class="col text-center" id="contact-us"><a href="contact.html" class="footer-link text-uppercase">kontakt</a></div>
 
-            <div class="col-last text-center" id="cookie-policy"><a class="text-uppercase last">cookie policy</a></div>
+            <div class="col-last text-center" id="cookie-policy"><a class="footer-link text-uppercase last">cookie policy</a></div>
         </div>
-    </footer>
+    </footer> -->
     <!-- Footer -->
 
 </body>

@@ -1,5 +1,13 @@
 $(document).ready(function () {
 
+    $(".rubrik").hover(function() {
+        $(this).toggleClass("clicked");
+    })
+
+    $(".footer-links").hover(function() {
+        $(this).toggleClass("clicked");
+    })
+
     $(".subarea").each(function (i) {
         $(this).attr("id", "subarea" + i).hover(function() {
             $("#subarea" + i).css("opacity", "0.4");

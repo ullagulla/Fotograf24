@@ -10,20 +10,18 @@
     }
 }
 
+$animate: all 0.2s ease-in-out;
+
 .navbar {
     max-width: 1600px;
     margin: auto;
     text-transform: uppercase;
     padding: 20px 10px 20px 15px;
+
     img {
-        width: 21%;
+        width: 40px;
+        height: 33px;
         margin-right: 10px;
-        @include tablet(){
-            width: 10%;
-        }
-        @include desktop(){
-            width: 8%;
-        }
     }
 
     .navbar-brand {
@@ -34,7 +32,12 @@
 
     #navbar-icons {
         flex-direction: row;
+
+        &:hover {
+            transition: $animate;
+        }
     }
+
     .v-line {
         border-right: 1px solid rgba(0, 0, 0, .5);
         height: 20px;
@@ -45,14 +48,28 @@
     .nav-item {
         .rubrik {
             margin-right: 40px;
+
             &:hover {
                 color: rgba(0, 0, 0, .5);
+                transition: $animate;
+            }
+            &.clicked::after {
+                width: 100%;
+                background-color:  #EADCCF;
             }
         }
+        .rubrik::after {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 0;
+            background: transparent;
+            transition: width .5s ease, background-color .5s ease;
+        }
+
         .nav-link {
             color: rgba(0, 0, 0, .5);
             padding-right: 5px;
-
         }
     }
 
@@ -67,6 +84,7 @@
         }
     }
 }
+
 .line {
     border-bottom: 1px solid rgba(82, 82, 82, 0.5);
 

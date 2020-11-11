@@ -1,0 +1,21 @@
+$animate: all 0.2s ease-in-out;
+
+body {
+    .about-us-wrapper {
+        .about-img-wrapper {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+        a {
+            color: black;
+            font-weight: bold;
+            &:hover {
+                color: rgba(0, 0, 0, .5);
+                transition: $animate;
+                text-decoration: none;
+            }
+        }
+    }
+}
