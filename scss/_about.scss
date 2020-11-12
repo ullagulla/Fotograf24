@@ -1,6 +1,13 @@
 $animate: all 0.2s ease-in-out;
 
 body {
+    .about-us-header {
+        background-image: url("../images/about-us-header.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 600px;
+    }
     .about-us-wrapper {
         .about-img-wrapper {
             width: 100%;
@@ -8,6 +15,8 @@ body {
                 width: 100%;
             }
         }
+    }
+    .about-row {
         a {
             color: black;
             font-weight: bold;
@@ -16,6 +25,13 @@ body {
                 transition: $animate;
                 text-decoration: none;
             }
+        }
+        .img-background-wrapper {
+            background-image: url("../images/camera.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            height: 550px;
         }
     }
 }

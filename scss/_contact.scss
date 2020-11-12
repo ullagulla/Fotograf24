@@ -1,0 +1,46 @@
+body {
+    .contact-us-header {
+        background-image: url("../images/contact-header.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 65% 35%;
+        height: 650px;
+    }
+    .contact-container {
+        .row {
+            a {
+                color: black;
+                font-weight: bold;
+                &:hover {
+                    color: rgba(0, 0, 0, .5);
+                    transition: $animate;
+                    text-decoration: none;
+                }
+            }
+            .img-wrapper {
+                img {
+                    width: 100%;
+                    margin: auto;
+                }
+            }
+        }
+    }
+    .contact-row {
+        a {
+            color: black;
+            font-weight: bold;
+            &:hover {
+                color: rgba(0, 0, 0, .5);
+                transition: $animate;
+                text-decoration: none;
+            }
+        }
+        .img-background-wrapper {
+            background-image: url("../images/camera.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            height: 550px;
+        }
+    }
+}

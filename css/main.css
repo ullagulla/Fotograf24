@@ -7,8 +7,8 @@
     width: 40px;
     height: 33px;
     margin-right: 10px; }
-  .navbar .navbar-brand span {
-    border-bottom: 2px solid #EADCCF; }
+  .navbar .navbar-brand {
+    font-size: 22px; }
   .navbar #navbar-icons {
     flex-direction: row; }
     .navbar #navbar-icons:hover {
@@ -53,49 +53,20 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     height: 700px; }
+  body .container .row .panels {
+    position: relative; }
+    body .container .row .panels .panels-icon {
+      position: absolute;
+      float: left; }
+      body .container .row .panels .panels-icon img {
+        width: 40px; }
+    body .container .row .panels .panels-text {
+      padding-left: 50px; }
   body .container .row .photographers-list li a {
     text-decoration: none;
     color: black; }
     body .container .row .photographers-list li a:hover {
       color: rgba(0, 0, 0, 0.5); }
-  body .container .row .img-photographer-wrapper {
-    width: 100%; }
-    body .container .row .img-photographer-wrapper img {
-      width: 100%; }
-    body .container .row .img-photographer-wrapper .hover-div {
-      position: relative;
-      z-index: 100;
-      background: rgba(0, 0, 0, 0); }
-      body .container .row .img-photographer-wrapper .hover-div:hover img {
-        background: rgba(0, 0, 0, 0.719);
-        filter: brightness(40%);
-        transition: all 0.5s; }
-      body .container .row .img-photographer-wrapper .hover-div .photographer-info {
-        color: white;
-        font-weight: bold;
-        position: absolute;
-        opacity: 0;
-        z-index: 1000;
-        left: 47%;
-        top: 43%;
-        transform: translate(-47%, -43%); }
-      body .container .row .img-photographer-wrapper .hover-div .show-profile {
-        text-transform: uppercase;
-        color: white;
-        font-weight: bold;
-        position: absolute;
-        opacity: 0;
-        z-index: 1000;
-        left: 47%;
-        top: 57%;
-        transform: translate(-47%, -57%);
-        border-bottom: 2px solid pink; }
-      body .container .row .img-photographer-wrapper .hover-div:hover .photographer-info {
-        opacity: 1;
-        transition: all 1s; }
-      body .container .row .img-photographer-wrapper .hover-div:hover .show-profile {
-        opacity: 1;
-        transition: all 1s; }
   body .container .row .subarea-header {
     padding-left: 0;
     padding-right: 0; }
@@ -327,15 +298,118 @@ body {
       .page-footer #cookie-policy {
         display: inline-block; } }
 
+body .about-us-header {
+  background-image: url("../images/about-us-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 600px; }
+
 body .about-us-wrapper .about-img-wrapper {
   width: 100%; }
   body .about-us-wrapper .about-img-wrapper img {
     width: 100%; }
 
-body .about-us-wrapper a {
+body .about-row a {
   color: black;
   font-weight: bold; }
-  body .about-us-wrapper a:hover {
+  body .about-row a:hover {
     color: rgba(0, 0, 0, 0.5);
     transition: all 0.2s ease-in-out;
     text-decoration: none; }
+
+body .about-row .img-background-wrapper {
+  background-image: url("../images/camera.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 550px; }
+
+body .container .img-photographer-wrapper {
+  width: 100%; }
+  body .container .img-photographer-wrapper img {
+    width: 100%; }
+  body .container .img-photographer-wrapper .hover-div {
+    position: relative;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0); }
+    body .container .img-photographer-wrapper .hover-div:hover img {
+      background: rgba(0, 0, 0, 0.719);
+      filter: brightness(40%);
+      transition: all 0.5s; }
+    body .container .img-photographer-wrapper .hover-div .photographer-info {
+      color: white;
+      font-weight: bold;
+      position: absolute;
+      opacity: 0;
+      z-index: 1000;
+      left: 47%;
+      top: 43%;
+      transform: translate(-47%, -43%); }
+    body .container .img-photographer-wrapper .hover-div .show-profile {
+      text-transform: uppercase;
+      color: white;
+      font-weight: bold;
+      position: absolute;
+      opacity: 0;
+      z-index: 1000;
+      left: 47%;
+      top: 57%;
+      transform: translate(-47%, -57%);
+      border-bottom: 2px solid pink; }
+    body .container .img-photographer-wrapper .hover-div:hover .photographer-info {
+      opacity: 1;
+      transition: all 1s; }
+    body .container .img-photographer-wrapper .hover-div:hover .show-profile {
+      opacity: 1;
+      transition: all 1s; }
+
+body .container .connect-wrapper .img-wrapper {
+  width: 100%; }
+  body .container .connect-wrapper .img-wrapper img {
+    width: 100%; }
+
+body .container .connect-wrapper h4, body .container .connect-wrapper h5 {
+  display: inline-block;
+  border-bottom: 2px solid #EADCCF; }
+
+body .contact-us-header {
+  background-image: url("../images/contact-header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 65% 35%;
+  height: 650px; }
+
+body .contact-container .row a {
+  color: black;
+  font-weight: bold; }
+  body .contact-container .row a:hover {
+    color: rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-in-out;
+    text-decoration: none; }
+
+body .contact-container .row .img-wrapper img {
+  width: 100%;
+  margin: auto; }
+
+body .contact-row a {
+  color: black;
+  font-weight: bold; }
+  body .contact-row a:hover {
+    color: rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-in-out;
+    text-decoration: none; }
+
+body .contact-row .img-background-wrapper {
+  background-image: url("../images/camera.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 550px; }
+
+body .cookies-header {
+  background-image: url("../images/cookies.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 70% 30%;
+  height: 700px; }

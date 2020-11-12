@@ -1,0 +1,16 @@
+body {
+    .container {
+        .connect-wrapper {
+            .img-wrapper {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+            h4, h5 {
+                display: inline-block;
+                border-bottom: 2px solid #EADCCF;
+            }
+        }
+    }
+}

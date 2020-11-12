@@ -1,0 +1,50 @@
+body {
+    .container {
+        .img-photographer-wrapper {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+            .hover-div {
+                position: relative;
+                z-index: 100;
+                background: rgba(0, 0, 0, 0);
+                &:hover img {
+                    background: rgba(0, 0, 0, 0.719);
+                    filter: brightness(40%);
+                    transition: all 0.5s;
+                }
+                .photographer-info {
+                    color: white;
+                    font-weight: bold;
+                    position: absolute;
+                    opacity: 0;
+                    z-index: 1000;
+                    left: 47%;
+                    top: 43%;
+                    transform: translate(-47%, -43%);
+                }
+                .show-profile {
+                    text-transform: uppercase;
+                    color: white;
+                    font-weight: bold;
+                    position: absolute;
+                    opacity: 0;
+                    z-index: 1000;
+                    left: 47%;
+                    top: 57%;
+                    transform: translate(-47%, -57%);
+                    border-bottom: 2px solid pink;
+                }
+                &:hover .photographer-info {
+                    opacity: 1;
+                    transition: all 1s;
+                }
+                &:hover .show-profile {
+                    opacity: 1;
+                    transition: all 1s;
+                }
+            }
+        }
+    }
+}
