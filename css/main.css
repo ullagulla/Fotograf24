@@ -17,14 +17,12 @@
     border-right: 1px solid rgba(0, 0, 0, 0.5);
     height: 20px;
     margin: 10px 5px 0px 5px; }
-  .navbar .nav-item .rubrik {
-    margin-right: 40px; }
-    .navbar .nav-item .rubrik:hover {
-      color: rgba(0, 0, 0, 0.5);
-      transition: all 0.2s ease-in-out; }
-    .navbar .nav-item .rubrik.clicked::after {
-      width: 100%;
-      background-color: #EADCCF; }
+  .navbar .nav-item .rubrik:hover {
+    color: rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-in-out; }
+  .navbar .nav-item .rubrik.clicked::after {
+    width: 100%;
+    background-color: #EADCCF; }
   .navbar .nav-item .rubrik::after {
     content: '';
     display: block;
@@ -33,8 +31,7 @@
     background: transparent;
     transition: width .5s ease, background-color .5s ease; }
   .navbar .nav-item .nav-link {
-    color: rgba(0, 0, 0, 0.5);
-    padding-right: 5px; }
+    color: rgba(0, 0, 0, 0.5); }
   .navbar button {
     border: none; }
     .navbar button .hamburger {
@@ -90,13 +87,14 @@ body {
         min-height: 450px; } }
     @media (min-width: 968px) {
       body .container .row .subarea-photographers {
-        min-height: 550px; } }
+        min-height: 700px; } }
   body .container .row .img-city-wrapper {
     position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    margin: auto; }
     @media (min-width: 600px) {
       body .container .row .img-city-wrapper {
         padding-top: 100px; } }

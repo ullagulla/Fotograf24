@@ -45,8 +45,6 @@ $animate: all 0.2s ease-in-out;
 
     .nav-item {
         .rubrik {
-            margin-right: 40px;
-
             &:hover {
                 color: rgba(0, 0, 0, .5);
                 transition: $animate;
@@ -67,7 +65,6 @@ $animate: all 0.2s ease-in-out;
 
         .nav-link {
             color: rgba(0, 0, 0, .5);
-            padding-right: 5px;
         }
     }
 

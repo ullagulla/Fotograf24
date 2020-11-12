@@ -72,7 +72,7 @@ body {
                     min-height: 450px;
                 }
                 @include desktop(){
-                    min-height: 550px;
+                    min-height: 700px;
                 }
             }
             .img-city-wrapper {
@@ -81,6 +81,7 @@ body {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                margin: auto;
                 @include tablet(){
                     padding-top: 100px;
                 }
