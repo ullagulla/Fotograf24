@@ -8,7 +8,13 @@
     height: 33px;
     margin-right: 10px; }
   .navbar .navbar-brand {
-    font-size: 1.5vw; }
+    font-size: 20px; }
+    @media (min-width: 600px) {
+      .navbar .navbar-brand {
+        font-size: 2vw; } }
+    @media (min-width: 968px) {
+      .navbar .navbar-brand {
+        font-size: 1.5vw; } }
   .navbar #navbar-icons {
     flex-direction: row; }
     .navbar #navbar-icons:hover {
@@ -17,23 +23,27 @@
     border-right: 1px solid rgba(0, 0, 0, 0.5);
     height: 20px;
     margin: 10px 5px 0px 5px; }
-  .navbar .nav-item {
-    font-size: 1vw; }
-    .navbar .nav-item .rubrik:hover {
-      color: rgba(0, 0, 0, 0.5);
-      transition: all 0.2s ease-in-out; }
-    .navbar .nav-item .rubrik.clicked::after {
-      width: 100%;
-      background-color: #EADCCF; }
-    .navbar .nav-item .rubrik::after {
-      content: '';
-      display: block;
-      height: 2px;
-      width: 0;
-      background: transparent;
-      transition: width .5s ease, background-color .5s ease; }
-    .navbar .nav-item .nav-link {
-      color: rgba(0, 0, 0, 0.5); }
+  @media (min-width: 600px) {
+    .navbar .nav-item {
+      font-size: 2vw; } }
+  @media (min-width: 968px) {
+    .navbar .nav-item {
+      font-size: 1vw; } }
+  .navbar .nav-item .rubrik:hover {
+    color: rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-in-out; }
+  .navbar .nav-item .rubrik.clicked::after {
+    width: 100%;
+    background-color: #EADCCF; }
+  .navbar .nav-item .rubrik::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease; }
+  .navbar .nav-item .nav-link {
+    color: rgba(0, 0, 0, 0.5); }
   .navbar button {
     border: none; }
     .navbar button .hamburger {
@@ -355,6 +365,9 @@ body .container .img-photographer-wrapper {
       left: 47%;
       top: 30%;
       transform: translate(-47%, -30%); }
+      @media (min-width: 600px) {
+        body .container .img-photographer-wrapper .hover-div .photographer-info {
+          font-size: 1vw; } }
     body .container .img-photographer-wrapper .hover-div .show-profile {
       text-transform: uppercase;
       color: white;
@@ -366,6 +379,9 @@ body .container .img-photographer-wrapper {
       top: 57%;
       transform: translate(-47%, -57%);
       border-bottom: 2px solid pink; }
+      @media (min-width: 600px) {
+        body .container .img-photographer-wrapper .hover-div .show-profile {
+          font-size: 1vw; } }
     body .container .img-photographer-wrapper .hover-div:hover .photographer-info {
       opacity: 1;
       transition: all 1s; }

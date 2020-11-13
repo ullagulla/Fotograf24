@@ -1,3 +1,15 @@
+@mixin tablet {
+    @media (min-width: 600px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 968px) {
+        @content;
+    }
+}
+
 body {
     .container {
         .img-photographer-wrapper {
@@ -23,6 +35,9 @@ body {
                     left: 47%;
                     top: 30%;
                     transform: translate(-47%, -30%);
+                    @include tablet() {
+                        font-size: 1vw;
+                    }
                 }
                 .show-profile {
                     text-transform: uppercase;
@@ -35,6 +50,9 @@ body {
                     top: 57%;
                     transform: translate(-47%, -57%);
                     border-bottom: 2px solid pink;
+                    @include tablet() {
+                        font-size: 1vw;
+                    }
                 }
                 &:hover .photographer-info {
                     opacity: 1;
