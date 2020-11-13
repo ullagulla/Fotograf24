@@ -50,19 +50,14 @@ $(document).ready(function () {
 
     $(window).scroll(function(){
         if ($(this).scrollTop() > 900) {
-            $('.scroll-button').fadeIn('slow');
+            $(".scroll-button").fadeIn("slow");
         } else {
-            $('.scroll-button').fadeOut('slow');
+            $(".scroll-button").fadeOut("slow");
         }
     });
-    $('.scroll-button').click(function(){
+    $(".scroll-button").click(function(){
         $("html, body").animate({ scrollTop: 0 }, 500);
         return false;
     });
-
-    // $(".scroll-button").on("click", function () {
-    //     var y = $(window).scrollTop(); //your current y position on the page
-    //     $(window).scrollTop(0);
-    // });
 
 });
