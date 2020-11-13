@@ -45,11 +45,15 @@ body {
             .col-md-4 {
                 .subarea {
                     fill: #EADCCF;
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
             }
             .region_link_list {
                 color: black;
                 &:hover {
+                    cursor: pointer;
                     color: rgba(0, 0, 0, 0.623);
                 }
             }

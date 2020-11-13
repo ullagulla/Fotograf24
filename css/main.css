@@ -79,9 +79,12 @@ body {
       border-bottom: 1px solid rgba(82, 82, 82, 0.5); }
   body .container .row .col-md-4 .subarea {
     fill: #EADCCF; }
+    body .container .row .col-md-4 .subarea:hover {
+      cursor: pointer; }
   body .container .row .region_link_list {
     color: black; }
     body .container .row .region_link_list:hover {
+      cursor: pointer;
       color: rgba(0, 0, 0, 0.623); }
   body .container .row .subarea-info {
     padding-top: 50px;
