@@ -32,8 +32,14 @@ body {
             background-repeat: no-repeat;
             background-position: center center;
             height: 550px;
+            width: 100%;
         }
         button {
+            color: rgba(0, 0, 0, .5);
+            padding: 10px 7px;
+            text-transform: uppercase;
+            border-radius: 1px;
+            background-color: #EADCCF;
         }
     }
 }
