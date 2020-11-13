@@ -26,12 +26,12 @@ $animate: all 0.2s ease-in-out;
 
     .navbar-brand {
         font-size: 20px;
-        @include tablet(){
-            font-size: 2vw;
-        }
-        @include desktop(){
-            font-size: 1.5vw;
-        }
+        // @include tablet(){
+        //     font-size: 2vw;
+        // }
+        // @include desktop(){
+        //     font-size: 1.5vw;
+        // }
     }
 
     #navbar-icons {
