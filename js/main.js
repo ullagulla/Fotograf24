@@ -47,4 +47,22 @@ $(document).ready(function () {
             $(this).attr("id", "subarea-info" + i);
         });
     });
+
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 50) {
+            $('.scroll-button').fadeIn('slow');
+        } else {
+            $('.scroll-button').fadeOut('slow');
+        }
+    });
+    $('.scroll-button').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 500);
+        return false;
+    });
+
+    // $(".scroll-button").on("click", function () {
+    //     var y = $(window).scrollTop(); //your current y position on the page
+    //     $(window).scrollTop(0);
+    // });
+
 });

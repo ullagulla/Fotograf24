@@ -3,6 +3,11 @@
         @content;
     }
 }
+@mixin desktop {
+    @media (min-width: 968px) {
+        @content;
+    }
+}
 
 $animate: all 0.2s ease-in-out;
 
@@ -19,6 +24,13 @@ $animate: all 0.2s ease-in-out;
                 color: rgba(0, 0, 0, .5);
                 padding: 5px;
                 cursor: pointer;
+                font-size: 3vw;
+                @include tablet() {
+                    font-size: 2vw;
+                }
+                @include desktop() {
+                    font-size: 1vw;
+                }
 
                 &:hover {
                     text-decoration: none;
