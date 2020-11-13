@@ -9,12 +9,6 @@
     margin-right: 10px; }
   .navbar .navbar-brand {
     font-size: 20px; }
-    @media (min-width: 600px) {
-      .navbar .navbar-brand {
-        font-size: 2vw; } }
-    @media (min-width: 968px) {
-      .navbar .navbar-brand {
-        font-size: 1.5vw; } }
   .navbar #navbar-icons {
     flex-direction: row; }
     .navbar #navbar-icons:hover {
