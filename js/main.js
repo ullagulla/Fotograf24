@@ -49,7 +49,7 @@ $(document).ready(function () {
     });
 
     $(window).scroll(function(){
-        if ($(this).scrollTop() > 50) {
+        if ($(this).scrollTop() > 900) {
             $('.scroll-button').fadeIn('slow');
         } else {
             $('.scroll-button').fadeOut('slow');
